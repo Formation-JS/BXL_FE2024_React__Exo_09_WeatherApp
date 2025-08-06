@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SearchBar from "../../components/search-bar/search-bar";
+import WeatherRequest from "../../components/weather-request/weather-request";
 
 export default function WeatherApp() {
 
@@ -12,7 +13,9 @@ export default function WeatherApp() {
     return (
         <div>
             <SearchBar onSearch={handleCitySearch} />
-
+            {citySelected && (
+                <WeatherRequest city={citySelected} />
+            )}
         </div>
     );
 }
