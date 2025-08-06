@@ -16,3 +16,6 @@ Composant "Parent" des fonctionnalités de "Weather"
 
 
 ## Utilisation de TypeScript
+- Typé le contenu du state `useState<Type>()`
+- Type les parameters des fonctions « handle... »
+- Type les props des composants (quand necessaire)
