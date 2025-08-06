@@ -9,7 +9,7 @@ export async function getWeatherFromCity(city: string) : Promise<Weather> {
 
     return {
         weatherDesc: 'peu nuageux',
-        weatherIcon: '02d',
+        weatherIcon: 'https://openweathermap.org/img/wn/02d@2x.png',
         temp: 20.58,
         feelsLike: 20.23, 
         country: 'BE',

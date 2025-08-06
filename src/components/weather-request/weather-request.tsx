@@ -1,6 +1,7 @@
 import { Suspense, use } from "react";
 import { getWeatherFromCity } from "../../services/weather.service";
 import type { Weather } from "../../@types/weather";
+import WeatherDisplay from "../weather-display/weather-display";
 
 //! Typage du composant
 type WeatherRequestProps = {
@@ -27,7 +28,7 @@ function WeatherRequestInner({ weatherPromise } : WeatherRequestInnerProps) {
 
     return (
         <>
-            {/* L'affichage qu'on fera aprés la pause de midi, non ? */}
+            <WeatherDisplay data={weather} />
         </>
     )
 }
